@@ -1,0 +1,162 @@
+/* reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color:darkgray;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* estilos de header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+   
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+header nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    list-style: none;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: green;
+    transform: scale(1,3);
+}
+
+/* imagen central*/
+
+div.imagen-central img{
+    animation-name:none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border: solid 3px; 
+}
+
+div.imagen-central img:hover{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    animation-name:none;
+    width: 100px;
+    border: solid 1px; 
+
+}
+
+/* texto*/
+
+.caja {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, green, whitesmoke);
+
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    grid-area: footer;
+}
+
+/*seccion perros*/
+
+.perros {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    Display: inline;
+}
+
+section{
+    background-color: green;
+    grid-area: section;
+}
+
+/*seccion gatos*/
+
+.gatos {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ 
+
+/*seccion otrasespecies*/
+
+.otrasespecies {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*seccion contactos*/
+
+.contactos {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*seccion servicios*/
+
+.servicios {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* queries*/
+
+@media screen and (min-width:1024px){
+   header{
+       flex-direction: row;
+       justify-content: space-around;
+   }
+
+}
